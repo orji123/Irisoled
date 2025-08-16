@@ -17,7 +17,7 @@ IrisOLED provides a collection of monochrome bitmaps (robotic eye expressions an
 * [Contributing]
 
 ## Features
-* 30 pre-made robotic eye expressions and icons.
+* 32 pre-made robotic eye expressions and icons.
 * IrisoledAnimation - a lightweight, non-blocking animation player compatible with multiple display drivers.
 
 ## Install
