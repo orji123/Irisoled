@@ -8,13 +8,10 @@ IrisOLED provides a collection of monochrome bitmaps (robotic eye expressions an
 # Table of contents
 * [Features](#features)
 * [Install](#install)
-* [Quick start](#quick-start)
-* [Irisoled bitmaps](#irisoled-bitmaps)
+* [Quick Start](#quick-start)
+* [Irisoled Bitmaps](#irisoled-bitmaps)
 * [Irisoled Animation](#irisoled-animation)
-* [Examples overview]
-* [PROGMEM notes & memory tips]
-* [Driver compatibility (SSD1306 / SH1106)]
-* [Contributing]
+* [Driver Compatibility and Required Libraries](#driver-compatibility-and-required-libraries)
 
 ## Features
 * 32 pre-made robotic eye expressions and icons.
@@ -26,7 +23,7 @@ IrisOLED provides a collection of monochrome bitmaps (robotic eye expressions an
 3. Restart the Arduino IDE.
 4. Examples will appear under **File → Examples → Irisoled**.
 
-## Quick start
+## Quick Start
 ```c++
 #include <Wire.h>
 #include <Adafruit_GFX.h>
@@ -47,10 +44,10 @@ void loop() {
 }
 ```
 
-## IrisOLED bitmaps
+## IrisOLED Bitmaps
 All bitmaps are declared under the `Irisoled` namespace in `Irisoled.h` and defined in `Irisoled.cpp` in PROGMEM.
 
-### Names included
+### Names Included
 * `Irisoled::alert`, `Irisoled::angry`, `Irisoled::blink_down`, `Irisoled::blink_up`, `Irisoled::blink`, `Irisoled::bored`, `Irisoled::despair`, `Irisoled::disoriented`,
 * `Irisoled::excited`, `Irisoled::focused`, `Irisoled::furious`, `Irisoled::happy`, `Irisoled::look_down`, `Irisoled::look_left`, `Irisoled::look_right`, `Irisoled::look_up`,
 * `Irisoled::normal`, `Irisoled::sad`, `Irisoled::scared`, `Irisoled::sleepy`, `Irisoled::surprised`, `Irisoled::wink_left`, `Irisoled::wink_right`, `Irisoled::worried`,
@@ -79,7 +76,7 @@ IrisoledAnimation(const unsigned char* const framesPROGMEM[],
                   bool loop = true);
 ```
 
-### Public methods (what you can call)
+### Public Methods
 * `start(uint8_t startFrame = 0)` - Start/restart from a frame.
 * `stop()` - Pause animation.
 * `resume()` - Resume if paused.
@@ -93,5 +90,15 @@ IrisoledAnimation(const unsigned char* const framesPROGMEM[],
 * `getFrameCount()` - Get total number of frames.
 * `isRunning()` - Returns true if animation is currently playing.
 
-
-
+## Driver Compatibility and Required Libraries
+The animation helper is driver-agnostic. In your sketch always include:
+```c++
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h> // or <Adafruit_SH1106.h>
+```
+### Required Libraries
+These are the external libraries your sketches will depend on:
+* Adafruit GFX Library - provides `drawBitmap()` and the basic graphics API -> https://github.com/adafruit/Adafruit-GFX-Library/.
+* Adafruit SSD1306 (or another SSD1306 driver) — if you use an SSD1306 OLED -> https://github.com/adafruit/Adafruit_SSD1306/.
+* Adafruit SH1106 (or any SH1106-compatible driver) — only if you use SH1106-based displays -> https://github.com/wonho-maker/Adafruit_SH1106/.
+* Any other display driver that implements the Adafruit-GFX API (must provide `clearDisplay()`, `drawBitmap()`, `display()`).
