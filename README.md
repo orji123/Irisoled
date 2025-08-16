@@ -7,8 +7,7 @@ IrisOLED provides a collection of monochrome bitmaps (robotic eye expressions an
 
 # Table of contents
 * [Features](#features)
-* [Install]
-* [Library layout]
+* [Install](#install)
 * [Quick start (draw one bitmap)]
 * [Irisoled bitmaps (namespace)]
 * [IrisoledAnimation - API Reference]
@@ -20,6 +19,48 @@ IrisOLED provides a collection of monochrome bitmaps (robotic eye expressions an
 ## Features
 * 30 pre-made robotic eye expressions and icons.
 * IrisoledAnimation - a lightweight, non-blocking animation player compatible with multiple display drivers.
+
+## Install
+1. Download or clone this repository.
+2. Copy the Irisoled folder to your Arduino libraries/ directory, or use **Sketch → Include Library → Add .ZIP Library**... to install the ZIP.
+3. Restart the Arduino IDE.
+4. Examples will appear under **File → Examples → Irisoled**.
+
+## Quick start — draw one bitmap
+```c++
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+#include <Irisoled.h>
+
+Adafruit_SSD1306 display(128, 64, &Wire, -1);
+
+void setup() {
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
+  display.clearDisplay();
+  // draw a full-screen bitmap stored in PROGMEM
+  display.drawBitmap(0, 0, Irisoled::normal, 128, 64, WHITE);
+  display.display();
+}
+
+void loop() {
+}
+```
+
+## IrisOLED bitmaps (namespace)
+All bitmaps are declared under the `Irisoled` namespace in `Irisoled.h` and defined in `Irisoled.cpp` in PROGMEM.
+
+### Names included**
+* `Irisoled::focused, Irisoled::normal, Irisoled::happy, Irisoled::angry, Irisoled::furious, Irisoled::sad, Irisoled::surprised,`
+* `Irisoled::blink, Irisoled::blink_up, Irisoled::blink_down, Irisoled::wink_left, Irisoled::wink_right, Irisoled::bored, Irisoled::look_down,`
+* `Irisoled::look_left, Irisoled::look_right, Irisoled::look_up, Irisoled::look_down, Irisoled::despair, Irisoled::sleepy, Irisoled::disoriented,`
+* `Irisoled::alert, Irisoled::excited, Irisoled::scared, Irisoled::worried, Irisoled::sleepy,`
+* `Irisoled::battery_low, Irisoled::battery_full, Irisoled::left_signal, Irisoled::right_signal, Irisoled::warning, Irisoled::mode, Irisoled::logo.`
+
+Use `display.drawBitmap(x, y, Irisoled::<name>, width, height, WHITE);`
+
+
+
 
 
 
