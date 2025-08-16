@@ -8,8 +8,8 @@ IrisOLED provides a collection of monochrome bitmaps (robotic eye expressions an
 # Table of contents
 * [Features](#features)
 * [Install](#install)
-* [Quick start](#quick_start)
-* [Irisoled bitmaps](#irisoled_bitmaps)
+* [Quick start](#quick-start)
+* [Irisoled bitmaps](#irisoled-bitmaps)
 * [IrisoledAnimation - API Reference]
 * [Examples overview]
 * [PROGMEM notes & memory tips]
