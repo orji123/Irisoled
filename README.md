@@ -8,8 +8,8 @@ IrisOLED provides a collection of monochrome bitmaps (robotic eye expressions an
 # Table of contents
 * [Features](#features)
 * [Install](#install)
-* [Quick start (draw one bitmap)]
-* [Irisoled bitmaps (namespace)]
+* [Quick start](#quick_start)
+* [Irisoled bitmaps](#irisoled_bitmaps)
 * [IrisoledAnimation - API Reference]
 * [Examples overview]
 * [PROGMEM notes & memory tips]
@@ -26,7 +26,7 @@ IrisOLED provides a collection of monochrome bitmaps (robotic eye expressions an
 3. Restart the Arduino IDE.
 4. Examples will appear under **File → Examples → Irisoled**.
 
-## Quick start — draw one bitmap
+## Quick start
 ```c++
 #include <Wire.h>
 #include <Adafruit_GFX.h>
@@ -47,10 +47,10 @@ void loop() {
 }
 ```
 
-## IrisOLED bitmaps (namespace)
+## IrisOLED bitmaps
 All bitmaps are declared under the `Irisoled` namespace in `Irisoled.h` and defined in `Irisoled.cpp` in PROGMEM.
 
-### Names included**
+### Names included
 * `Irisoled::alert, Irisoled::angry, Irisoled::blink_down, Irisoled::blink_up, Irisoled::blink, Irisoled::bored, Irisoled::despair, Irisoled::disoriented,`
 * `Irisoled::excited, Irisoled::focused, Irisoled::furious, Irisoled::happy, Irisoled::look_down, Irisoled::look_left, Irisoled::look_right, Irisoled::look_up,`
 * `Irisoled::normal, Irisoled::sad, Irisoled::scared, Irisoled::sleepy, Irisoled::surprised, Irisoled::wink_left, Irisoled::wink_right, Irisoled::worried,`
