@@ -1,0 +1,23 @@
+# Basic site config for IrisOLED GitHub Pages (project site)
+title: "IrisOLED"
+description: "Arduino library for expressive robotic OLED eyes (SSD1306 / SH1106)."
+# For project pages set baseurl to your repo name
+baseurl: "/Irisoled"         # <-- leave this as /Irisoled for project site
+url: "https://orji123.github.io"  # your GitHub Pages domain (no trailing slash)
+
+# Theme (built-in GitHub Pages themes)
+theme: minima
+
+# Markdown processor
+markdown: kramdown
+
+# Optional metadata you can use in templates or pages
+author: "orji123"
+email: "your-email@example.com"    # optional
+logo: "/assets/logo.png"           # place your logo at assets/logo.png
+
+# Permalinks and build
+permalink: /:path/
+exclude:
+  - README.md
+  - LICENSE
