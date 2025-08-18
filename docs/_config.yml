@@ -1,21 +1,17 @@
 # Basic site config
 title: "IrisOLED"
 description: "Arduino library for expressive robotic OLED eyes (SSD1306 / SH1106)."
-baseurl: "/Irisoled"     
-url: "https://orji123.github.io"
+baseurl: "/Irisoled"        
+url: "https://orji123.github.io"  
 
 # Theme
-theme: jekyll-theme-dinky
+theme: jekyll-theme-leap-day
 
 # Markdown processor
 markdown: kramdown
-
-# Author details
 author: "Chijindu-Orji Iseh-Ntah"
-email: "chijipeters2@gmail.com"
-
-# Logo
-logo: "/Irisoled/docs/assets/logo.png"
+email: "chijipeters2@gmail.com"   
+logo: "/docs/assets/logo.png"        
 
 # Permalinks and build
 permalink: /:path/
