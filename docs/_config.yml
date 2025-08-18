@@ -13,8 +13,8 @@ markdown: kramdown
 
 # Optional metadata you can use in templates or pages
 author: "orji123"
-email: "your-email@example.com"    # optional
-logo: "/assets/logo.png"           # place your logo at assets/logo.png
+email: "chijipeters2@gmail.com"   
+logo: "https://github.com/user-attachments/assets/45d72a1a-9e4f-408f-a2d3-3ade6a18af2f"           # place your logo at assets/logo.png
 
 # Permalinks and build
 permalink: /:path/
