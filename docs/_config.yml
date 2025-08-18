@@ -5,7 +5,7 @@ baseurl: "/Irisoled"
 url: "https://orji123.github.io"
 
 # Theme
-theme: jekyll-theme-minimal
+theme: jekyll-theme-dinky
 
 # Markdown processor
 markdown: kramdown
