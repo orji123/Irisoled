@@ -167,6 +167,6 @@ This project is released under the **MIT License**. See `LICENSE` for details.
 ## Contact
 
 Maintainer: **Chijindu-Orji**  
-E-mail Address: chijipeters2@gmail.com   GitHub: https://github.com/orji123/Irisoled
+E-mail Address: chijipeters2@gmail.com
 
 ---
