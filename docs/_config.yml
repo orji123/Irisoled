@@ -11,7 +11,7 @@ theme: jekyll-theme-leap-day
 markdown: kramdown
 author: "Chijindu-Orji Iseh-Ntah"
 email: "chijipeters2@gmail.com"   
-logo: "/docs/assets/logo.png"        
+logo: "assets/main_logo.png"        
 
 # Permalinks and build
 permalink: /:path/
