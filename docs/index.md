@@ -15,7 +15,7 @@
 It provides a collection of monochrome bitmaps (eye expressions + useful icons) and a small non-blocking animation helper so you can add personality to robots without blocking the rest of your code.
 
 <p align="center">
-  <img width="1491" height="1024" alt="irisoled_all_expression" src="https://github.com/user-attachments/assets/194dffe9-3e06-4ccf-9b99-10e19038cbb9" />
+  <img width="700" height="481" alt="irisoled_all" src="https://github.com/user-attachments/assets/2d1cdcb3-5954-425f-b017-8332df16dc21" />
 </p>
 
 ---
@@ -170,7 +170,7 @@ This project is released under the **MIT License**. See `LICENSE` for details.
 
 ## Contact
 
-Maintainer: **Chijindu-Orji**  
+Maintainer: **Chijindu-Orji Iseh-Ntah"**  
 E-mail Address: chijipeters2@gmail.com
 
 ---
