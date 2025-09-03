@@ -14,6 +14,10 @@
 **IrisOLED** is an Arduino library for expressive robotic OLED eyes using SSD1306 / SH1106 and other Adafruit-GFX-compatible displays.  
 It provides a collection of monochrome bitmaps (eye expressions + useful icons) and a small non-blocking animation helper so you can add personality to robots without blocking the rest of your code.
 
+<p align="center">
+  <img width="1491" height="1024" alt="irisoled_all_expression" src="https://github.com/user-attachments/assets/194dffe9-3e06-4ccf-9b99-10e19038cbb9" />
+</p>
+
 ---
 
 ## Table of contents
@@ -45,7 +49,7 @@ It provides a collection of monochrome bitmaps (eye expressions + useful icons) 
    git clone https://github.com/orji123/Irisoled.git
    ```
 2. Copy the `Irisoled` folder into your Arduino `libraries/` directory **OR** use:
-   **Sketch → Include Library → Add .ZIP Library...** and select a ZIP of this repo.
+   **Sketch → Include Library → Add .ZIP Library** and select the ZIP of this repo.
 3. Restart the Arduino IDE.
 4. Examples will appear under **File → Examples → Irisoled**.
 
