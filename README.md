@@ -8,7 +8,7 @@ Arduino library for robotic OLED eye expressions for SSD1306 / SH1106 and other 
 IrisOLED provides a collection of monochrome bitmaps (robotic eye expressions and useful icons) plus a small non-blocking animation helper so you can make expressive robot eyes without blocking the rest of your code.
 
 <p align="center">
-  <img width="2982" height="2048" alt="All_Expression_High" src="https://github.com/user-attachments/assets/b067b5f3-12bd-47df-9526-bc13db600896" />
+  <img width="1491" height="1024" alt="irisoled_all_expression" src="https://github.com/user-attachments/assets/194dffe9-3e06-4ccf-9b99-10e19038cbb9" />
 </p>
 
 # Table of contents
