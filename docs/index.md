@@ -20,7 +20,7 @@ It provides a collection of monochrome bitmaps (eye expressions + useful icons) 
 
 ---
 
-## Table of contents
+## Table of Contents
 - [Features](#features)
 - [Install](#install)
 - [Quick Start](#quick-start)
@@ -84,7 +84,7 @@ void loop() {
 
 All bitmaps are declared under the `Irisoled` namespace in `Irisoled.h` and defined in `Irisoled.cpp` in `PROGMEM`.
 
-### Included names
+### Included Names
 `Irisoled::alert`, `Irisoled::angry`, `Irisoled::blink_down`, `Irisoled::blink_up`, `Irisoled::blink`, `Irisoled::bored`, `Irisoled::despair`, `Irisoled::disoriented`,  
 `Irisoled::excited`, `Irisoled::focused`, `Irisoled::furious`, `Irisoled::happy`, `Irisoled::look_down`, `Irisoled::look_left`, `Irisoled::look_right`, `Irisoled::look_up`,  
 `Irisoled::normal`, `Irisoled::sad`, `Irisoled::scared`, `Irisoled::sleepy`, `Irisoled::surprised`, `Irisoled::wink_left`, `Irisoled::wink_right`, `Irisoled::worried`,  
@@ -136,7 +136,7 @@ IrisoledAnimation(const unsigned char* const framesPROGMEM[],
 
 ---
 
-## Driver Compatibility and Required Libraries
+## Driver Compatibility
 
 The animation helper is driver-agnostic. In your sketch always include:
 
@@ -145,7 +145,7 @@ The animation helper is driver-agnostic. In your sketch always include:
 #include <Adafruit_SSD1306.h> // or <Adafruit_SH1106.h>
 ```
 
-### Required libraries
+### Required Libraries
 - [Adafruit GFX Library](https://github.com/adafruit/Adafruit-GFX-Library)  
 - [Adafruit SSD1306](https://github.com/adafruit/Adafruit_SSD1306) (for SSD1306 displays)  
 - [Adafruit SH1106](https://github.com/wonho-maker/Adafruit_SH1106) (if using SH1106-based displays)  
