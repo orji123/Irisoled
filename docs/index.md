@@ -170,7 +170,7 @@ This project is released under the **MIT License**. See `LICENSE` for details.
 
 ## Contact
 
-Maintainer: **Chijindu-Orji Iseh-Ntah"**  
+Maintainer: **Chijindu-Orji Iseh-Ntah**  
 E-mail Address: chijipeters2@gmail.com
 
 ---
